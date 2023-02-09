@@ -21,6 +21,7 @@ function Artworks() {}
 function AudiosandVideos() {}
 function RecentNewsandEvents() {}
 function Programs() {}
+function ExcerptsFromBook() {}
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
             <div className="search-container">
               <input type="text" placeholder="Search" />
               <button>&#128269;</button>
+            </div>
+
+            <div className='book-tab'>
+              <Link to="/excerpts-from-book" className='excerpts'>Excerpts From Book</Link>
             </div>
 
             <div className= "tabs">
@@ -53,6 +58,7 @@ function App() {
                 <Route path="/audios-&-videos" element={<AudiosandVideos />} />
                 <Route path="/recent-news-&-events" element={<RecentNewsandEvents />} />
                 <Route path="/programs" element={<Programs />} />
+                <Route path="/excerpts-from-book" element={<ExcerptsFromBook />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
