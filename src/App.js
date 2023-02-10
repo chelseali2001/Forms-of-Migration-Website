@@ -30,7 +30,8 @@ function App() {
           <div className="home-page" >
             <img src="https://cdn-icons-png.flaticon.com/512/91/91819.png" alt="icon" className="icon" />
         
-            <h1>Migration</h1>
+            <Link to="/" className='logoLink'>Migration</Link>
+            
             <div className="search-container">
               <input type="text" placeholder="Search" />
               <button>&#128269;</button>
