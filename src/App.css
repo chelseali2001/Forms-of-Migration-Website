@@ -18,7 +18,6 @@ body{
   color: black;
 }
 
-
 .search-container {
   display: flex;
   align-items: center;
@@ -61,20 +60,20 @@ button:hover {
   overflow:auto;
   display: inline-flex;
   position: relative;
-  width: 50%;
   top: -95px;
-  left: 530px;
+  left: -25px;
 }
 
 .excerpts {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   background-color: black;
   border-radius: 10px;
-  width: 200px;
-  height: 36px;
+  width: 130px;
+  height: 45px;
   padding: 5px;
+  text-align: center;
 }
 
 .rectangle-container {
@@ -121,8 +120,6 @@ h2 {
   margin: 0;
 }
 
-
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -142,4 +139,20 @@ h2 {
 
 .icon {
   margin-right: 1px;
+}
+
+.gallery {
+  border: 1px solid #000000;
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgb(206, 230, 252);
+  text-align: center;
+}
+
+.image {
+  border: 5px solid #969696;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
 }

@@ -8,8 +8,10 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-imgix": "^9.7.0",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
