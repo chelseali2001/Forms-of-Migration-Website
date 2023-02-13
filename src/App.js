@@ -1,4 +1,5 @@
 import './App.css';
+import Data from './MOCK_DATA.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -6,6 +7,7 @@ import {
     Route,
     Link,
   } from 'react-router-dom'
+import { useState } from 'react';
 
 import HomePage from './components/HomePage'
 import InstitutionsandAffiliates from './components/InstitutionsandAffiliates'
@@ -15,9 +17,11 @@ import AudiosandVideos from './components/AudiosandVideos'
 import RecentNewsandEvents from './components/RecentNewsandEvents'
 import Programs from './components/Programs' 
 import ExcerptsFromBook from './components/ExcerptsFromBook'
+import SearchBar from './components/SearchBar';
 import PageNotFound from './components/PageNotFound';
 
-function App() {
+function App(){
+  const [query, setQuery] = useState('')
   return (
     <>
       <div className="App">
@@ -26,9 +30,24 @@ function App() {
             <Link to="/" className='logoLink'>Migration</Link>
       
           <div className="search-container">
-            <input type="text" placeholder="Search" />
-            <button>&#128269;</button>
+            <input type="text" placeholder="Search" onChange={event => setQuery(event.target.value)} />
+            <Link to="/search"><button>&#128269;</button></Link>
           </div>
+          {
+            Data.filter(movie => {
+              if (query === '') {
+                return '';
+              } else if (movie.title.toLowerCase().includes(query.toLowerCase())) {
+                return movie;
+              }
+            }).map((movie, index) => (
+              <div key={index}>
+                <p>{movie.type}</p>
+                <p>{movie.date}</p>
+                <p>{movie.title}</p>
+              </div>
+            ))
+          }
 
           <div className='book-tab'>
             <Link to="/excerpts-from-book" className='excerpts'>Excerpts From Book</Link>
@@ -45,6 +64,7 @@ function App() {
           <Route path="/recent-news-&-events" element={<RecentNewsandEvents />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/excerpts-from-book" element={<ExcerptsFromBook />} />
+          <Route path="/search" element={<SearchBar />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
 
