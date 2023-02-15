@@ -1,0 +1,60 @@
+.institutionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .institutionsTable {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .institutionsTable td,
+  .institutionsTable th {
+    padding: 8px;
+  }
+
+  .institutionsTable tr:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+
+.modalBackdrop {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal {
+    background-color: white;
+    max-width: 500px; /* adjust as necessary */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .closeButton {
+    border: none;
+    background-color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .modalContent {
+    margin-top: 20px;
+  }
