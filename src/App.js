@@ -26,7 +26,7 @@ function App(){
     <>
       <div className="App">
         <div className="home-page" >
-          <img src="https://cdn-icons-png.flaticon.com/512/91/91819.png" alt="icon" className="icon" />  
+          <Link to="/"><img src="https://cdn-icons-png.flaticon.com/512/91/91819.png" alt="icon" className="icon" /></Link>
             <Link to="/" className='logoLink'>Migration</Link>
       
           <div className="search-container">
