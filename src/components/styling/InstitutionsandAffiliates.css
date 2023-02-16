@@ -16,6 +16,11 @@
     padding: 8px;
   }
 
+  .institutionsTable thead {
+    background-color: #555;
+    color: #fff; 
+  }
+
   .institutionsTable tr:hover {
   background-color: #555;
   color: #fff;
