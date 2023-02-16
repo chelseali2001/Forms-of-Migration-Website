@@ -33,6 +33,11 @@ function App(){
             <input type="text" placeholder="Search" onChange={event => setQuery(event.target.value)} />
             <Link to="/search"><button>&#128269;</button></Link>
           </div>
+
+          <div className='book-tab'>
+            <Link to="/excerpts-from-book" className='excerpts'>Excerpts From Book</Link>
+          </div>
+          
           {
             Data.filter(movie => {
               if (query === '') {
@@ -48,10 +53,6 @@ function App(){
               </div>
             ))
           }
-
-          <div className='book-tab'>
-            <Link to="/excerpts-from-book" className='excerpts'>Excerpts From Book</Link>
-          </div>
         </div>
 
         <Routes>
