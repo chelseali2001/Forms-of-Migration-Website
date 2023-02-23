@@ -1,0 +1,34 @@
+.audios-and-videos-container {
+    text-align: center;
+    display: inline-block;
+  }
+.audios-and-videos-tabs{
+    text-align: center;
+    display: inline-block;
+}
+  
+  .audio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+  }
+  
+  .audio-item {
+    text-align: center;
+  }
+  
+
+  .video-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+  }
+  
+  .video-item {
+    text-align: center;
+  }
+  
