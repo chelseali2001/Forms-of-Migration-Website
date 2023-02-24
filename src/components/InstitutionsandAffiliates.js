@@ -69,7 +69,7 @@ const InstitutionsandAffiliates = () => {
               <button onClick={closeModal} className="closeButton">X</button>
             </div>
             <div className="modalContent">
-              <p><strong>Institution:</strong> {selectedInstitution.institution}</p>
+              <p>{selectedInstitution.institution}</p>
               <p><strong>Affiliation:</strong> {selectedInstitution.affiliation}</p>
             </div>
           </div>

@@ -41,10 +41,21 @@
   
   .modal {
     background-color: white;
-    max-width: 500px; /* adjust as necessary */
+    width: 70%;
+    height: 60%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modalContent p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .modalContent p {
+    font-size: 1.5rem;
   }
   
   .modalHeader {
