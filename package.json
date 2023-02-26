@@ -7,11 +7,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
+    "react-animated-slider": "^1.1.4",
     "react-dom": "^18.2.0",
     "react-imgix": "^9.7.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "react-slideshow-image": "^4.2.0"
+    "react-slideshow-image": "^4.2.1",
+    "react-slidez": "^0.0.31"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -150,19 +150,3 @@ h2 {
 .icon {
   margin-right: 1px;
 }
-
-.gallery {
-  border: 1px solid #000000;
-  display: block;
-  height: 100vh;
-  overflow-y: auto;
-  background-color: rgb(206, 230, 252);
-  text-align: center;
-}
-
-.image {
-  border: 5px solid #969696;
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-}
