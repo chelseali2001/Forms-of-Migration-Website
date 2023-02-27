@@ -1,0 +1,25 @@
+table{
+    margin: 50px;
+    padding: 2px;
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    width: 90%;;
+    font-size: 20px;
+}
+
+th{
+    padding: 2px;
+    border:  1px solid black;
+}
+
+td{
+    padding: 2px;
+    border:  1px solid black;
+}
+
+h2{
+    margin-left: 50px;
+}

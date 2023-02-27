@@ -1,9 +1,39 @@
 import React from 'react';
+import './styling/Programs.css';
 
-const Programs = () => (
-  <div style={{backgroundColor: "white", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
-    <h1>Programs</h1>
-  </div>
-);
+
+const programsData = [
+  { id: 1, name: 'program1', link: 'https://www.migrationpolicy.org/programs'},
+  { id: 2, name: 'program2', link: 'https://results.ed.gov/' },
+  { id: 3, name: 'program3', link: 'https://www.humanrightscareers.com/magazine/top-10-masters-programs-in-migration-studies/' },
+];
+
+const Programs = () => {
+  return (
+  <div className="programs">
+      <h2>Programs</h2>
+      <table className="programsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {programsData.map((program) => (
+            <tr>
+              <td>{program.id}</td>
+              <td>{program.name}</td>
+              <td>
+                <a href={program.link} target="_blank">link</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default Programs;

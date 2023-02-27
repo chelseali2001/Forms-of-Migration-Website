@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import file from "../FormOfMigration.pdf";
+import './styling/ExcerptsFromBook.css';
+import { Document, Page, pdfjs} from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
+
 
 const ExcerptsFromBook = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({numPages}) {
+    setNumPages(numPages);
+  }
+
   const openNewTab = (url) => {
     window.open(url, '_blank', 'noreferrer');
   };
@@ -9,11 +21,18 @@ const ExcerptsFromBook = () => {
     window.open(file);
   }
   return (
-    <div style={{backgroundColor: "white", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
-      {/* <h1>Excerpts From Book</h1> */}
-      {/* <a href="https://drive.google.com/file/d/1uzWdwzS4gRQeSw9jD1qDCHd1Tx0BavYM/view" target="_blank" rel="noreferrer">Forms of Migration Book</a> */}
-      <button role="link" onClick={() => openNewTab('https://drive.google.com/file/d/1uzWdwzS4gRQeSw9jD1qDCHd1Tx0BavYM/view')}>Forms of Migration Book</button>
-      <button onClick={() => showpdf(file)}>book</button>
+    <div>
+      <button role="link" onClick={() => openNewTab('https://drive.google.com/file/d/1uzWdwzS4gRQeSw9jD1qDCHd1Tx0BavYM/view')}>Open Book PDF Version From Google Drive</button>
+      <button onClick={() => showpdf(file)}>Open Book PDF Version From Local Server</button>
+      <h2 className='excerptsSectionTitle'>Pages From Book</h2>
+      <div className='excerptsSection'>
+        <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
+      </div>
     </div>
   );
 }
