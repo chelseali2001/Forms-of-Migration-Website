@@ -27,11 +27,9 @@ const ExcerptsFromBook = () => {
       <h2 className='excerptsSectionTitle'>Pages From Book</h2>
       <div className='excerptsSection'>
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
+          {[1,2,3,4,16,46,77,98,124].map(page => <Page pageNumber={page} />)}
+          {/* <Page pageNumber={pageNumber} /> */}
         </Document>
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
       </div>
     </div>
   );
