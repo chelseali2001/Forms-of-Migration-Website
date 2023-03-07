@@ -5,27 +5,32 @@ const institutionsData = [
   {
     number: 1,
     institution: "University of California, Los Angeles",
-    affiliation: "Public"
+    affiliation: "Public",
+    url: "https://www.ucla.edu/",
   },
   {
     number: 2,
     institution: "Stanford University",
-    affiliation: "Private"
+    affiliation: "Private",
+    url: "https://www.stanford.edu/",
   },
   {
     number: 3,
     institution: "Harvard University",
-    affiliation: "Private"
+    affiliation: "Private",
+    url: "https://www.harvard.edu/",
   },
   {
     number: 4,
     institution: "Massachusetts Institute of Technology",
-    affiliation: "Private"
+    affiliation: "Private",
+    url: "https://www.mit.edu/",
   },
   {
     number: 5,
     institution: "California Institute of Technology",
-    affiliation: "Private"
+    affiliation: "Private",
+    url: "https://www.caltech.edu/"
   }
 ];
 
@@ -71,6 +76,7 @@ const InstitutionsandAffiliates = () => {
             <div className="modalContent">
               <p>{selectedInstitution.institution}</p>
               <p><strong>Affiliation:</strong> {selectedInstitution.affiliation}</p>
+              <p><strong><a href={selectedInstitution.url} target="_blank">Link to Institute</a></strong></p>
             </div>
           </div>
         </div>

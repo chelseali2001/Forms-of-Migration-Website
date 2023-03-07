@@ -11,19 +11,19 @@ const Artworks = () => (
   <>
     <h1>Artworks</h1>
     <div className='gallery'>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[0]} alt="1"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[1]} alt="2"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
-      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width' target="_blank" rel="noreferrer"><img className='image' src={images[2]} alt="3"/></a>
+      <img className='image' src={images[0]} alt="1"/>
+      <img className='image' src={images[1]} alt="2"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
+      <img className='image' src={images[2]} alt="3"/>
     </div>
   </>
 );
