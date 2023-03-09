@@ -1,42 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import { getAllInstitutions } from './Frontend/Boundary/DatabaseGateway'; /* uncomment this when merged with backend repo */
 import './styling/InstitutionsandAffiliates.css';
-
-const institutionsData = [
-  {
-    number: 1,
-    institution: "University of California, Los Angeles",
-    affiliation: "Public",
-    url: "https://www.ucla.edu/",
-  },
-  {
-    number: 2,
-    institution: "Stanford University",
-    affiliation: "Private",
-    url: "https://www.stanford.edu/",
-  },
-  {
-    number: 3,
-    institution: "Harvard University",
-    affiliation: "Private",
-    url: "https://www.harvard.edu/",
-  },
-  {
-    number: 4,
-    institution: "Massachusetts Institute of Technology",
-    affiliation: "Private",
-    url: "https://www.mit.edu/",
-  },
-  {
-    number: 5,
-    institution: "California Institute of Technology",
-    affiliation: "Private",
-    url: "https://www.caltech.edu/"
-  }
-];
 
 
 const InstitutionsandAffiliates = () => {
   const [selectedInstitution, setSelectedInstitution] = useState(null);
+  const [allInstitutions, setallInstitutions] = useState([]);
+  const USE_EFFECT_ONLY_ON_MOUNT = Array.from([])
+
+  // useEffect(() => {
+  //   getAllInstitutions((institutionList) => {
+  //     if(institutionList === null) {
+  //       return
+  //     }
+  //     setallInstitutions(institutionList)
+  //   })
+  // }, USE_EFFECT_ONLY_ON_MOUNT);
+
+  // uncomment above useEffect when merged with backend repo
+
+  // Test data - TODO: remove this and uncomment above useEffect
+  useEffect(() => {
+    setallInstitutions([
+      {
+        number: 1,
+        institution: "University of California, Los Angeles",
+        affiliation: "Public",
+        url: "https://www.ucla.edu/",
+      },
+      {
+        number: 2,
+        institution: "Stanford University",
+        affiliation: "Private",
+        url: "https://www.stanford.edu/",
+      },
+      {
+        number: 3,
+        institution: "Harvard University",
+        affiliation: "Private",
+        url: "https://www.harvard.edu/",
+      },
+      {
+        number: 4,
+        institution: "Massachusetts Institute of Technology",
+        affiliation: "Private",
+        url: "https://www.mit.edu/",
+      },
+      {
+        number: 5,
+        institution: "California Institute of Technology",
+        affiliation: "Private",
+        url: "https://www.caltech.edu/"
+      }
+    ])
+  }, USE_EFFECT_ONLY_ON_MOUNT);
 
   const handleRowClick = (institution) => {
     setSelectedInstitution(institution);
@@ -57,11 +74,11 @@ const InstitutionsandAffiliates = () => {
           </tr>
         </thead>
         <tbody>
-          {institutionsData.map((institution) => (
-            <tr key={institution.number} onClick={() => handleRowClick(institution)}>
-              <td>{institution.number}</td>
-              <td>{institution.institution}</td>
-              <td>{institution.affiliation}</td>
+          {allInstitutions.map((anInstitution) => (
+            <tr key={anInstitution.number} onClick={() => handleRowClick(anInstitution)}>
+              <td>{anInstitution.number}</td>
+              <td>{anInstitution.institution}</td>
+              <td>{anInstitution.affiliation}</td>
             </tr>
           ))}
         </tbody>

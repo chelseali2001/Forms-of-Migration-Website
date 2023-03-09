@@ -1,40 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+// import { getAllVideos, getAllAudios } from './Frontend/Boundary/DatabaseGateway'; /* uncomment this when merged with backend repo */
 import './styling/AudiosandVideos.css';
 
-const mp3Files = [
-  'https://example.com/audio1.mp3',
-  'https://example.com/audio2.mp3',
-  'https://example.com/audio3.mp3',
-  'https://example.com/audio4.mp3',
-  'https://example.com/audio5.mp3',
-  'https://example.com/audio6.mp3',
-  'https://example.com/audio7.mp3',
-  'https://example.com/audio8.mp3',
-  'https://example.com/audio9.mp3',
-];
-
-const videoFiles = [
-  'https://example.com/video1.mp4',
-  'https://example.com/video2.mp4',
-  'https://example.com/video3.mp4',
-  'https://example.com/video4.mp4',
-  'https://example.com/video5.mp4',
-  'https://example.com/video6.mp4',
-  'https://example.com/video7.mp4',
-  'https://example.com/video8.mp4',
-  'https://example.com/video9.mp4',
-];
 
 function AudioList(props) {
-  const { mp3Files } = props;
+  const [allAudios, setallAudios] = useState([]);
+  const USE_EFFECT_ONLY_ON_MOUNT = Array.from([])
+
+  // useEffect(() => {
+  //   getAllAudios((audioList) => {
+  //     if(audioList === null) {
+  //       return
+  //     }
+  //     setallAudios(audioList)
+  //   })
+  // }, USE_EFFECT_ONLY_ON_MOUNT);
+
+  // uncomment above useEffect when merged with backend repo
+
+  // Test data - TODO: remove this and uncomment above useEffect
+  useEffect(() => {
+    setallAudios([
+      'https://example.com/audio1.mp3',
+      'https://example.com/audio2.mp3',
+      'https://example.com/audio3.mp3',
+      'https://example.com/audio4.mp3',
+      'https://example.com/audio5.mp3',
+      'https://example.com/audio6.mp3',
+      'https://example.com/audio7.mp3',
+      'https://example.com/audio8.mp3',
+      'https://example.com/audio9.mp3',
+    ])
+  }, USE_EFFECT_ONLY_ON_MOUNT);
 
   return (
     <div className="audio-list">
-      {mp3Files.map((mp3File, index) => (
+      {allAudios.map((anAudio, index) => (
         <div key={index} className="audio-item">
           <h3>Audio {index + 1}</h3>
           <audio controls>
-            <source src={mp3File} type="audio/mpeg" />
+            <source src={anAudio} type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -44,15 +49,42 @@ function AudioList(props) {
 }
 
 function VideoList(props) {
-  const { videoFiles } = props;
+  const [allVideos, setallVideos] = useState([]);
+  const USE_EFFECT_ONLY_ON_MOUNT = Array.from([])
+
+  // useEffect(() => {
+  //   getAllVideos((videoList) => {
+  //     if(videoList === null) {
+  //       return
+  //     }
+  //     setallVideos(videoList)
+  //   })
+  // }, USE_EFFECT_ONLY_ON_MOUNT);
+
+  // uncomment above useEffect when merged with backend repo
+
+  // Test data - TODO: remove this and uncomment above useEffect
+  useEffect(() => {
+    setallVideos([
+      'https://example.com/video1.mp4',
+      'https://example.com/video2.mp4',
+      'https://example.com/video3.mp4',
+      'https://example.com/video4.mp4',
+      'https://example.com/video5.mp4',
+      'https://example.com/video6.mp4',
+      'https://example.com/video7.mp4',
+      'https://example.com/video8.mp4',
+      'https://example.com/video9.mp4',
+    ])
+  }, USE_EFFECT_ONLY_ON_MOUNT);
 
   return (
     <div className="video-list">
-      {videoFiles.map((videoFile, index) => (
+      {allVideos.map((aVideo, index) => (
         <div key={index} className="video-item">
           <h3>Video {index + 1}</h3>
           <video controls>
-            <source src={videoFile} type="video/mp4" />
+            <source src={aVideo} type="video/mp4" />
             Your browser does not support the video element.
           </video>
         </div>
@@ -76,8 +108,8 @@ function AudiosandVideos() {
         <button onClick={() => handleTabClick('audio')} className={activeTab === 'audio' ? 'active' : ''}>Audio</button>
         <button onClick={() => handleTabClick('video')} className={activeTab === 'video' ? 'active' : ''}>Video</button>
       </div>
-      {activeTab === 'audio' && <AudioList mp3Files={mp3Files} />}
-      {activeTab === 'video' && <VideoList videoFiles={videoFiles} />}
+      {activeTab === 'audio' && <AudioList />}
+      {activeTab === 'video' && <VideoList />}
     </div>
   );
 }
