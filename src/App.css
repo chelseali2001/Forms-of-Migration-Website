@@ -27,13 +27,10 @@ body{
 }
 
 .search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 140px;
-  width: 50%;
+  width: 50%; 
   margin: 0 auto;
   margin-left: 450px;
+  margin-top: 55px;
 }
 
 input[type="text"] {
@@ -67,9 +64,11 @@ button:hover {
   float: right;
   overflow:auto;
   display: inline-flex;
-  position: relative;
-  top: -95px;
-  left: -25px;
+  position: absolute;
+  margin-top: 45px;
+  margin-right: 10px;
+  top:0;
+  right:0;
 }
 
 .excerpts {

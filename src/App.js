@@ -1,5 +1,4 @@
 import './App.css';
-import Data from './MOCK_DATA.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -21,38 +20,23 @@ import SearchBar from './components/SearchBar';
 import PageNotFound from './components/PageNotFound';
 
 function App(){
-  const [query, setQuery] = useState('')
   return (
     <>
       <div className="App">
+        
         <div className="home-page" >
           <Link to="/"><img src="https://cdn-icons-png.flaticon.com/512/91/91819.png" alt="icon" className="icon" /></Link>
             <Link to="/" className='logoLink'>Migration</Link>
       
           <div className="search-container">
-            <input type="text" placeholder="Search" onChange={event => setQuery(event.target.value)} />
-            <Link to="/search"><button>&#128269;</button></Link>
+            <SearchBar />
           </div>
 
           <div className='book-tab'>
             <Link to="/excerpts-from-book" className='excerpts'>Excerpts From Book</Link>
           </div>
           
-          {
-            Data.filter(movie => {
-              if (query === '') {
-                return '';
-              } else if (movie.title.toLowerCase().includes(query.toLowerCase())) {
-                return movie;
-              }
-            }).map((movie, index) => (
-              <div key={index}>
-                <p>{movie.type}</p>
-                <p>{movie.date}</p>
-                <p>{movie.title}</p>
-              </div>
-            ))
-          }
+          
         </div>
 
         <Routes>
