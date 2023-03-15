@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-left: -130px;
   }
   
   .rectangle-container {
