@@ -90,28 +90,33 @@ function SearchBar() {
     /*** Static Rendering ***/
     return (
         <div>
-            <input
-                className='searchBar'
-                type="text"
-                placeholder="Search here"
-                onChange={handleChange}
-                value={searchInput} />
-
-            <h3>Search Results:</h3>
-            <table>
+          <input
+            className='searchBar'
+            type="text"
+            placeholder="Search here"
+            onChange={handleChange}
+            value={searchInput} />
+      
+          {searchInput !== "" && (
+            <div>
+              <h3>Search Results:</h3>
+              <table>
                 <thead>
-                    <tr key="table-head">
-                        <th>Publication</th>
-                        <th>Author</th>
-                        <th>Date</th>
-                    </tr>
+                  <tr key="table-head">
+                    <th>Publication</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    {publicationsToDisplay}
+                  {publicationsToDisplay}
                 </tbody>
-            </table>
+              </table>
+            </div>
+          )}
         </div>
-    )
+      );
+      
 }
 
 export default SearchBar;
