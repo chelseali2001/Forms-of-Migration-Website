@@ -5,6 +5,7 @@ import {
     Routes,
     Route,
     Link,
+    Navigate
   } from 'react-router-dom'
 import { useState } from 'react';
 
