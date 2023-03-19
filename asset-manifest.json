@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Forms-of-Migration-Website/static/css/main.9a2d1f45.css",
+    "main.js": "/Forms-of-Migration-Website/static/js/main.2f1bebbc.js",
+    "static/media/FormOfMigration.pdf": "/Forms-of-Migration-Website/static/media/FormOfMigration.cf3582e8097c0723c2a7.pdf",
+    "static/media/institution.png": "/Forms-of-Migration-Website/static/media/institution.b3553b71635d0ce8ae11.png",
+    "static/media/artwork.png": "/Forms-of-Migration-Website/static/media/artwork.3f388a86eebb9696afdb.png",
+    "static/media/news.png": "/Forms-of-Migration-Website/static/media/news.8ea6c485f72d6a38f652.png",
+    "index.html": "/Forms-of-Migration-Website/index.html",
+    "main.9a2d1f45.css.map": "/Forms-of-Migration-Website/static/css/main.9a2d1f45.css.map",
+    "main.2f1bebbc.js.map": "/Forms-of-Migration-Website/static/js/main.2f1bebbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a2d1f45.css",
+    "static/js/main.2f1bebbc.js"
+  ]
+}
