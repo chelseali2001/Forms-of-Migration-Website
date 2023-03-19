@@ -42,6 +42,7 @@ function App(){
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/Forms-of-Migration-Website" element={<Navigate to="/" />} />
           <Route path="/institutions-&-affiliates" element={<InstitutionsandAffiliates />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/artworks" element={<Artworks />} />
