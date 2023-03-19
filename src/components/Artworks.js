@@ -7,14 +7,16 @@ const Artworks = () => {
   const [allArtworks, setallArtworks] = useState([]);
   const USE_EFFECT_ONLY_ON_MOUNT = Array.from([])
 
-  // useEffect(() => {
-  //   getAllArtworks((artworkList) => {
-  //     if(artworkList === null) {
-  //       return
-  //     }
-  //     setallArtworks(artworkList)
-  //   })
-  // }, USE_EFFECT_ONLY_ON_MOUNT);
+  /*
+  useEffect(() => {
+    getAllArtworks((artworkList) => {
+      if(artworkList === null) {
+        return
+      }
+      setallArtworks(artworkList)
+    })
+  }, USE_EFFECT_ONLY_ON_MOUNT);
+  */
 
   // uncomment above useEffect when merged with backend repo
 
