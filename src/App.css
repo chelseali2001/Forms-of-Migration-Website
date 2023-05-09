@@ -149,3 +149,17 @@ h2 {
 .icon {
   margin-right: 1px;
 }
+
+.footer-left .about-us{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-left .people{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}

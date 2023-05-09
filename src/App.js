@@ -19,6 +19,9 @@ import Programs from './components/Programs'
 import ExcerptsFromBook from './components/ExcerptsFromBook'
 import SearchBar from './components/SearchBar';
 import PageNotFound from './components/PageNotFound';
+import AboutUs from './components/AboutUs';
+import People from './components/People';
+
 
 function App(){
   return (
@@ -52,13 +55,15 @@ function App(){
           <Route path="/programs" element={<Programs />} />
           <Route path="/excerpts-from-book" element={<ExcerptsFromBook />} />
           <Route path="/search" element={<SearchBar />} />
+          <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/people' element={<People />}/>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
 
         <footer className="footer">
           <div className="footer-left">
-            <p>Copyright</p>
-            <p>Contact Info</p>
+            <Link to="/about-us" className='about-us'>About Us</Link>
+            <Link to="/people" className='people'>People</Link>
           </div>
           
           <div className="footer-right">
