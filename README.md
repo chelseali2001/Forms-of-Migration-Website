@@ -10,7 +10,7 @@ npm start
 Should automatically open [http://localhost:3000](http://localhost:3000). The app can also be viewed by opening the public/index.html file in the browser.
 
 ### How to publish the website
-The website is already published, but if new changes are made locally, then follow steps 7-8 on this website: [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
+The website is already published, but if new changes are made locally, then follow steps 7 on this website: [https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
 
 ### What's the project title and who are the personnel?
 Our project is the Forms of Migration Website. Our project partner is Jennifer Reimer and the developers of this website are Chelsea Li, Sourabh Jamalapuram, Haichao Yang, and Adam Graneto.
