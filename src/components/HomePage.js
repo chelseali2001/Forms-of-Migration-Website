@@ -44,6 +44,18 @@ const HomePage = () => (
           </div>
           <img src={require('../images/program.png')} alt="tabIcon" className='tabIcon' />
         </Link>
+        <Link to="/about-us" className='rectangle'>
+          <div className="rectangle-text-wrapper">
+            <span>About Us</span>
+          </div>
+          <img src={require('../images/about-us.png')} alt="tabIcon" className='tabIcon' />
+        </Link>
+        <Link to="/people" className='rectangle'>
+          <div className="rectangle-text-wrapper">
+            <span>People</span>
+          </div>
+          <img src={require('../images/people.png')} alt="tabIcon" className='tabIcon' />
+        </Link>
       </div>
     </div>
   </>

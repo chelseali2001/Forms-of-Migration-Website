@@ -61,8 +61,7 @@ function App(){
 
         <footer className="footer">
           <div className="footer-left">
-            <Link to="/about-us" className='about-us'>About Us</Link>
-            <Link to="/people" className='people'>People</Link>
+            <p>Copyright©2023</p>
           </div>
           
           <div className="footer-right">
