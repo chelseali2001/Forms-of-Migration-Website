@@ -15,6 +15,7 @@ The website should display names and profiles of affiliates, provide links to a 
 ### Test Strategy
 Click tabs and the button of book excerpts in the homepage, it should navigate to corresponding pages.
 Type in words in the search bar, it should display related information under the search bar in the homepage.
+Click the logo/icon of the webpage, it should redirect to the homepage.
 
 ### Examples
 <img width="1633" alt="webpage" src="https://github.com/chelseali2001/Forms-of-Migration-Website/assets/71799354/33ea2c0e-55cf-4262-a44f-0c0de06bea9d">
