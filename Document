@@ -1,0 +1,3 @@
+Addressing concerns identified during the code walkthrough assignment:
+We added two more pages which are about-us page for introducing our project team and people page for introducing other relevant people of this project to our website, and made them layout as tabs in the homepage to match the whole style of our website. Also, we changed our logo title and font style to meet the requirements of our project partner.
+We were not able to completely merge frontend and backend by this point, but we did have some related code commented out and some comments included in our code repo which is about the connection between frontend and backend, so we decided to leave this work to future teams that are going to work on this project in the future.
