@@ -1,5 +1,26 @@
 # Forms-of-Migration-Website
 
+### Design docs and Prototypes
+See Figma [here](https://www.figma.com/file/p7zThIBanh2xsf0bAGhINB/Capstone---Migration-Website?type=design&node-id=0%3A1&t=07q5LQ6aSeytxMTd-1)
+
+### Product Requirements
+The website should display names and profiles of affiliates, provide links to a selection of relevant content, display a list of relevant publications with citations generated from bibtex format, and embed audio and video. The website should also be able to search and display past publications, presentations, and tools. From a maintenance perspective the website should maintain a list of URLs of recent news or other events. Finally the website should be deployed to a public domain for the public to access.
+
+### Architecture Diagram
+<img width="565" alt="Frontend React Architecture Diagram" src="https://github.com/chelseali2001/Forms-of-Migration-Website/assets/71799354/fa0c101c-2c05-4b97-9725-b6830cac6948">
+
+### Planning and Schedules
+![planandschedule](https://github.com/chelseali2001/Forms-of-Migration-Website/assets/71799354/c52ea3a9-2ca9-449f-8278-0b75441ebea4)
+
+### Test Strategy
+Click tabs and the button of book excerpts in the homepage, it should navigate to corresponding pages.
+Type in words in the search bar, it should display related information under the search bar in the homepage.
+
+### Examples
+<img width="1633" alt="webpage" src="https://github.com/chelseali2001/Forms-of-Migration-Website/assets/71799354/33ea2c0e-55cf-4262-a44f-0c0de06bea9d">
+<img width="1680" alt="webpage1" src="https://github.com/chelseali2001/Forms-of-Migration-Website/assets/71799354/615ec4d2-0e08-4a93-9e17-f55451b7fff0">
+
+
 ### How to run the project
 Run 'npm install' first to download dependencies
 
