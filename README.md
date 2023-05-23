@@ -1,7 +1,7 @@
 # Forms-of-Migration-Website
 
 ### Design docs and Prototypes
-See Figma [here](https://www.figma.com/file/p7zThIBanh2xsf0bAGhINB/Capstone---Migration-Website?type=design&node-id=0%3A1&t=07q5LQ6aSeytxMTd-1)
+See on Figma [here](https://www.figma.com/file/p7zThIBanh2xsf0bAGhINB/Capstone---Migration-Website?type=design&node-id=0%3A1&t=07q5LQ6aSeytxMTd-1)
 
 ### Product Requirements
 The website should display names and profiles of affiliates, provide links to a selection of relevant content, display a list of relevant publications with citations generated from bibtex format, and embed audio and video. The website should also be able to search and display past publications, presentations, and tools. From a maintenance perspective the website should maintain a list of URLs of recent news or other events. Finally the website should be deployed to a public domain for the public to access.
